@@ -32,3 +32,16 @@ $(document).ready(function() {
     });
   });
 });
+
+$(document).ready(function() {
+  $("button#hello").click(function() {
+    $("p#cat").before("<img src='img/cat.jpg'/>");
+    $("p#dog").before("<img src='img/dog.jpg'/>");
+    $("p#cat").children("p").first().click(function() {
+      $(this).remove();
+    });
+    $("p#dog").children("p").first().click(function() {
+      $(this).remove();
+    });
+  });
+});
