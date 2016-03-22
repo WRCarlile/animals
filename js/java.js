@@ -23,13 +23,23 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("button#dog").click(function() {
-    $("p#cat1").before("<img src='img/cat.jpg'/>");
-    $("p#dog1").before("<img src='img/dog.jpg'/>");
-    $("p#cat").children("p").first().click(function() {
+  $("button#cat").click(function() {
+    $("ul#user").before("<img src='img/cat.jpg'/>");
+    $("ul#webpage").before("<img src='img/dog.jpg'/>");
+    $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
-    $("p#dog").children("p").first().click(function() {
+    $("ul#webpage").children("li").first().click(function() {
+      $(this).remove();
+    });
+  });
+  $("button#dog").click(function() {
+    $("ul#user").before("<img src='img/dog.jpg'/>");
+    $("ul#webpage").before("<img src='img/cat.jpg'/>");
+    $("ul#user").children("li").first().click(function() {
+      $(this).remove();
+    });
+    $("ul#webpage").children("li").first().click(function() {
       $(this).remove();
     });
   });
