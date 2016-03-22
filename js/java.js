@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>");
+  $("button#dog").click(function() {
+    $("ul#user").prepend("<li>Bark!!</li>");
+    $("ul#webpage").prepend("<li>Meow!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -10,20 +10,9 @@ $(document).ready(function() {
     });
   });
 
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Goodbye, dear user!</li>");
-    $("ul#user").children("li").first().click(function() {
-      $(this).remove();
-    });
-    $("ul#webpage").children("li").first().click(function() {
-      $(this).remove();
-    });
-  });
-
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
+  $("button#cat").click(function() {
+    $("ul#user").prepend("<li>Meow!</li>");
+    $("ul#webpage").prepend("<li>Bark!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -34,9 +23,9 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("p#cat").before("<img src='img/cat.jpg'/>");
-    $("p#dog").before("<img src='img/dog.jpg'/>");
+  $("button#dog").click(function() {
+    $("p#cat1").before("<img src='img/cat.jpg'/>");
+    $("p#dog1").before("<img src='img/dog.jpg'/>");
     $("p#cat").children("p").first().click(function() {
       $(this).remove();
     });
